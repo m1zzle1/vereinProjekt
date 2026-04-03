@@ -1,0 +1,232 @@
+.kontakt-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+}
+
+.kontakt-hero {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    border-radius: 30px;
+    border: 1px solid rgba(45, 27, 105, 0.08);
+    box-shadow: 0 18px 40px rgba(45, 27, 105, 0.10);
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.16)),
+        radial-gradient(circle at 14% 20%, rgba(78, 205, 196, 0.30) 0 11%, transparent 12%),
+        radial-gradient(circle at 82% 18%, rgba(255, 107, 157, 0.24) 0 10%, transparent 11%),
+        radial-gradient(circle at 26% 80%, rgba(95, 220, 210, 0.22) 0 12%, transparent 13%),
+        radial-gradient(circle at 84% 76%, rgba(255, 150, 190, 0.22) 0 12%, transparent 13%),
+        conic-gradient(
+            from 210deg at 50% 50%,
+            rgba(78, 205, 196, 0.18),
+            rgba(130, 235, 225, 0.16),
+            rgba(255, 107, 157, 0.18),
+            rgba(180, 120, 255, 0.16),
+            rgba(78, 205, 196, 0.18)
+        ),
+        linear-gradient(135deg, #f6fffe, #fff8fc);
+    isolation: isolate;
+}
+
+.kontakt-hero::before,
+.kontakt-hero::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.96;
+}
+
+.kontakt-hero::before {
+    width: 300px;
+    height: 300px;
+    top: -90px;
+    left: -80px;
+    background:
+        conic-gradient(
+            from 40deg,
+            rgba(78, 205, 196, 0.30),
+            rgba(110, 235, 220, 0.24),
+            rgba(170, 255, 240, 0.20),
+            rgba(120, 180, 255, 0.22),
+            rgba(190, 120, 255, 0.22),
+            rgba(78, 205, 196, 0.30)
+        );
+    clip-path: polygon(50% 0%, 72% 14%, 96% 18%, 84% 42%, 100% 62%, 74% 72%, 84% 96%, 56% 86%, 50% 100%, 30% 84%, 4% 92%, 16% 64%, 0% 44%, 18% 18%);
+    transform: rotate(-18deg);
+    filter: blur(0.5px);
+}
+
+.kontakt-hero::after {
+    width: 340px;
+    height: 340px;
+    right: -95px;
+    bottom: -115px;
+    background:
+        conic-gradient(
+            from 125deg,
+            rgba(255, 107, 157, 0.26),
+            rgba(255, 140, 190, 0.22),
+            rgba(255, 190, 220, 0.20),
+            rgba(140, 220, 215, 0.22),
+            rgba(78, 205, 196, 0.24),
+            rgba(255, 107, 157, 0.26)
+        );
+    clip-path: polygon(50% 0%, 64% 12%, 88% 8%, 80% 34%, 100% 50%, 80% 68%, 90% 94%, 62% 84%, 50% 100%, 34% 86%, 8% 92%, 18% 66%, 0 50%, 18% 28%, 10% 8%, 38% 14%);
+    transform: rotate(18deg);
+    filter: blur(0.5px);
+}
+
+.kontakt-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.kontakt-hero h1,
+.kontakt-hero p {
+    position: relative;
+    z-index: 1;
+}
+
+.kontakt-hero h1 {
+    margin: 0 0 1rem;
+    font-size: 2.6rem;
+    color: var(--color-text-main);
+}
+
+.kontakt-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+}
+
+.kontakt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.kontakt-card {
+    background: var(--color-white);
+    border-radius: 22px;
+    padding: 2rem;
+    border: 1px solid rgba(45, 27, 105, 0.08);
+    box-shadow: 0 12px 28px rgba(45, 27, 105, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.kontakt-card:nth-child(1) {
+    border-top: 6px solid #cba6dfbf;
+}
+
+.kontakt-card:nth-child(2) {
+    border-top: 6px solid #dd9cd0;
+}
+
+.kontakt-card:nth-child(3) {
+    border-top: 6px solid #8bacc4;
+}
+
+.kontakt-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(45, 27, 105, 0.12);
+}
+
+.kontakt-card h2 {
+    margin: 0 0 0.9rem;
+    color: var(--color-text-main);
+    font-size: 1.3rem;
+}
+
+.kontakt-card p {
+    margin: 0 0 1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.kontakt-text {
+    margin-top: auto;
+    color: var(--color-text-main);
+    font-weight: 600;
+}
+
+.kontakt-extra {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 248, 240, 0.96));
+    border-radius: 24px;
+    padding: 2rem;
+    border: 1px solid rgba(45, 27, 105, 0.08);
+    box-shadow: 0 12px 28px rgba(45, 27, 105, 0.06);
+}
+
+.kontakt-extra h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--color-text-main);
+    font-size: 1.6rem;
+}
+
+.kontakt-extra p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .kontakt-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .kontakt-hero {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .kontakt-page {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .kontakt-hero {
+        padding: 2rem 1rem;
+        border-radius: 22px;
+        margin-bottom: 2rem;
+    }
+
+    .kontakt-hero h1 {
+        font-size: 2rem;
+    }
+
+    .kontakt-hero p {
+        font-size: 1rem;
+    }
+
+    .kontakt-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .kontakt-card {
+        padding: 1.5rem;
+        border-radius: 18px;
+        min-height: auto;
+    }
+
+    .kontakt-extra {
+        padding: 1.5rem;
+        border-radius: 18px;
+    }
+}

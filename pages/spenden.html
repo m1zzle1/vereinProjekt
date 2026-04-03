@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spenden - Kaleidoskop e.V.</title>    
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/spenden.css">
+</head>
+<body>
+   <header class="site-header">
+        <nav class="navbar">
+            <div class="logo" >
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="verein.html" data-i18n="nav.verein">Verein</a></li>
+                <li><a href="angebote.html" data-i18n="nav.angebote">Vereinsangebote</a></li>
+                <li><a href="stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                <li><a href="kontakt.html" data-i18n="nav.kontakt">Kontakt</a></li>
+                <li><a class="button-spenden" href="spenden.html" data-i18n="nav.spenden">Spenden</a></li>
+                <li class="lang-switcher">
+                   <button type="button" onclick="setLang('de')">DE</button>
+                    <button type="button" onclick="setLang('ru')">RU</button>
+                    <button type="button" onclick="setLang('en')">EN</button>
+                    <button type="button" onclick="setLang('ua')">UA</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main class="spenden-page">
+        <section class="spenden-hero">
+            <div class="spenden-hero-content">
+                <p class="spenden-eyebrow">Gemeinsam helfen</p>
+                <h1>Mit Ihrer Spende unterstützen Sie Bildung, Kultur und Gemeinschaft.</h1>
+                <p class="spenden-lead">
+                    Ihre Hilfe ermöglicht neue Angebote für Kinder, Jugendliche und Familien.
+                    Jeder Beitrag stärkt unsere Vereinsarbeit direkt vor Ort.
+                </p>
+
+                <div class="spenden-trust">
+                    <div class="trust-item">
+                        <strong>Direkt wirksam</strong>
+                        <span>Ihre Spende unterstützt konkrete Projekte und Angebote.</span>
+                    </div>
+                    <div class="trust-item">
+                        <strong>Flexibel</strong>
+                        <span>Einmalig oder regelmäßig helfen — ganz so, wie es für Sie passt.</span>
+                    </div>
+                    <div class="trust-item">
+                        <strong>Transparent</strong>
+                        <span>Auf Wunsch spenden Sie zusätzlich per Überweisung.</span>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="spenden-box" aria-label="Spendenformular">
+                <p class="box-title">Jetzt spenden</p>
+
+                <div class="donation-toggle" role="tablist" aria-label="Spendenrhythmus">
+                    <button type="button" class="toggle-btn active" role="tab" aria-selected="true" data-mode="once">
+                        Einmalig
+                    </button>
+                    <button type="button" class="toggle-btn" role="tab" aria-selected="false" data-mode="monthly">
+                        Monatlich <!--Способы оплаты будут PayPay und Stripe-->
+                    </button>
+                </div>
+
+                <div class="amount-grid" aria-label="Spendensumme wählen">
+                    <button type="button" class="amount-btn active" data-amount="10">10 €</button>
+                    <button type="button" class="amount-btn" data-amount="25">25 €</button>
+                    <button type="button" class="amount-btn" data-amount="50">50 €</button>
+                    <button type="button" class="amount-btn" data-amount="100">100 €</button>
+                    <button type="button" class="amount-btn amount-custom" data-amount="custom">Eigener Betrag</button>
+                </div>
+
+                <div class="custom-amount" id="custom-amount-block" hidden>
+                    <label for="custom-amount-input">Eigener Betrag in Euro</label>
+                    <input id="custom-amount-input" type="number" min="1" step="1" placeholder="z. B. 35">
+                </div>
+
+                <div class="donation-summary">
+                    <span>Ausgewählt:</span>
+                    <strong id="donation-summary-text">10 € einmalig</strong>
+                </div>
+
+                <div class="payment-buttons">
+                    <a
+                        id="donate-paypal"
+                        class="donate-btn paypal-btn"
+                        href="https://www.paypal.com/donate/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        Mit PayPal spenden
+                    </a>
+
+                     <a
+                        id="donate-card"
+                        class="donate-btn card-btn"
+                        href="https://buy.stripe.com/DEIN-LINK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        Mit Karte spenden
+                    </a>
+                </div>
+                <p class="spenden-note">
+                    Sie werden für die Zahlung auf eine sichere externe Spendenseite weitergeleitet.
+                </p>
+            </aside>
+        </section>
+
+        <section class="spenden-info-grid">
+            <article class="info-card">
+                <h2>Wofür Ihre Spende hilft</h2>
+                <p>
+                    Mit Ihrer Unterstützung fördern wir Bildungsangebote, Begegnung, kreative Projekte
+                    und gemeinschaftliche Aktivitäten für Kinder, Jugendliche und Erwachsene.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h2>Regelmäßig unterstützen</h2>
+                <p>
+                    Monatliche Spenden helfen uns besonders, langfristig zu planen und Angebote
+                    stabil weiterzuführen.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h2>Spende per Überweisung</h2>
+                <p>
+                    Empfänger: Kaleidoskop e.V.<br>
+                    IBAN: DE00 0000 0000 0000 0000 00<br>
+                    BIC: XXXXXXXX<br>
+                    Verwendungszweck: Spende
+                </p>
+            </article>
+        </section>
+
+        <section class="spenden-extra">
+            <h2>Hinweis zur Spende</h2>
+            <p>
+                Bitte ersetzen Sie die Zahlungslinks durch Ihren echten PayPal- oder Stripe-Link.
+                Wenn Sie später möchten, kann die Seite auch an PayPal Donate SDK oder Stripe Payment Links
+                dynamisch angebunden werden.
+            </p>
+        </section>
+    </main>
+
+
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-column footer-brand">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="footer-logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </div>
+                <p data-i18n="home.subtitle">
+                    Bildung, Kultur und Gemeinschaft unter einem Dach.
+                    Entdecken Sie unsere vielfältigen Kurse und Angebote für Kinder und Erwachsene.
+                </p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="footer.links">Links</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18n="nav.home">Startseite</a></li>
+                    <li><a href="angebote.html" data-i18n="nav.angebote">Angebote</a></li>
+                    <li><a href="verein.html" data-i18n="nav.verein">Verein</a></li>
+                    <li><a href="stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="nav.kontakt">Kontakt</h3>
+                <ul class="footer-contact">
+                    <li data-i18n="footer.address">📍 adresse</li>
+                    <li data-i18n="footer.phone">📞 +49 (0) 123 456789</li>
+                    <li data-i18n="footer.email">✉ info@kaleidoskop-ev.de</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Kaleidoskop e.V. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+                <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+
+

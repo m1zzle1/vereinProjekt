@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vereinsangebote - Kaleidoskop e.V.</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/angebote.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo" >
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="verein.html" data-i18n="nav.verein">Verein</a></li>
+                <li><a href="angebote.html" data-i18n="nav.angebote">Vereinsangebote</a></li>
+                <li><a href="stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                <li><a href="kontakt.html" data-i18n="nav.kontakt">Kontakt</a></li>
+                <li><a class="button-spenden" href="spenden.html" data-i18n="nav.spenden">Spenden</a></li>
+                <li class="lang-switcher">
+                    <button type="button" onclick="setLang('de')">DE</button>
+                    <button type="button" onclick="setLang('ru')">RU</button>
+                    <button type="button" onclick="setLang('en')">EN</button>
+                    <button type="button" onclick="setLang('ua')">UA</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="angebote-page">
+    <section class="angebote-hero">
+        <h1 data-i18n="page.angebote.title">Vereinsangebote</h1>
+        <p data-i18n="page.angebote.subtitle">
+            Unsere Angebote für Kinder, Jugendliche und Erwachsene in den Bereichen Bildung, Sprache, Kreativität und Gemeinschaft.
+        </p>
+        <a href="https://formular.vereinsplaner.com/49f5fe4a-afce-4922-868e-2ddfa0040e0f" target="_blank" rel="noopener">
+                <button id="cta-button" data-i18n="home.cta">Mitglied werden</button>
+        </a>
+    </section>
+
+
+    <section class="angebote-list">
+    <div class="angebote-grid">
+        <a href="angebote-pages/olympiadenmathe.html" class="angebot-card">
+            <h3 data-i18n="page.angebote.olympiadenmathe.title">Olympiadenmathe</h3>
+            <p data-i18n="page.angebote.olympiadenmathe.text">
+                Förderung mathematischen Denkens und Vorbereitung auf Wettbewerbe.
+            </p>
+        </a>
+
+        <a href="angebote-pages/sprachtisch-a.html" class="angebot-card">
+            <h3 data-i18n="page.angebote.sprachtischA.title">Sprachtisch A</h3>
+            <p data-i18n="page.angebote.sprachtischA.text">
+                Sprachpraxis und gemeinsames Lernen in einer kleinen Gruppe.
+            </p>
+        </a>
+
+        <a href="angebote-pages/sprachtisch-b.html" class="angebot-card">
+            <h3 data-i18n="page.angebote.sprachtischB.title">Sprachtisch B</h3>
+            <p data-i18n="page.angebote.sprachtischB.text">
+                Vertiefung der Sprachkenntnisse durch Übungen und Austausch.
+            </p>
+        </a>
+
+        <a href="angebote-pages/sprachtisch-c.html" class="angebot-card">
+            <h3 data-i18n="page.angebote.sprachtischC.title">Sprachtisch C</h3>
+            <p data-i18n="page.angebote.sprachtischC.text">
+                Weiterführendes Sprachtraining mit Fokus auf Kommunikation.
+            </p>
+        </a>
+
+        <a href="angebote-pages/deutsch-34.html" class="angebot-card">
+            <h3 data-i18n="page.angebote.deutsch34.title">Deutsch 3.-4. Klasse</h3>
+            <p data-i18n="page.angebote.deutsch34.text">
+                Unterstützung im Fach Deutsch für jüngere Schülerinnen und Schüler.
+            </p>
+        </a>
+
+        <a href="angebote-pages/deutsch-56.html" class="angebot-card">
+            <h3 data-i18n="page.angebote.deutsch56.title">Deutsch 5.-6. Klasse</h3>
+            <p data-i18n="page.angebote.deutsch56.text">
+                Gezielte Förderung von Lesen, Schreiben und Sprachverständnis.
+            </p>
+        </a>
+
+        <a href="angebote-pages/mathe-34.html" class="angebot-card">
+            <h3 data-i18n="page.angebote.mathe34.title">Mathe 3.-4. Klasse</h3>
+            <p data-i18n="page.angebote.mathe34.text">
+                Spielerische und verständliche Mathematikförderung für Kinder.
+            </p>
+        </a>
+
+        <a href="angebote-pages/mathe-56.html" class="angebot-card">
+            <h3 data-i18n="page.angebote.mathe56.title">Mathe 5.-6. Klasse</h3>
+            <p data-i18n="page.angebote.mathe56.text">
+                Begleitende Unterstützung im Schulstoff und Aufbau mathematischer Sicherheit.
+            </p>
+        </a>
+
+        <a href="angebote-pages/kunst-fuer-kids.html" class="angebot-card">
+            <h3 data-i18n="page.angebote.kunst.title">Kunst für Kids</h3>
+            <p data-i18n="page.angebote.kunst.text">
+                Kreative Aktivitäten zur Förderung von Fantasie und Ausdruck.
+            </p>
+        </a>
+
+        <a href="angebote-pages/allgemein.html" class="angebot-card">
+            <h3 data-i18n="page.angebote.allgemein.title">Allgemein</h3>
+            <p data-i18n="page.angebote.allgemein.text">
+                Weitere offene Angebote, Projekte und gemeinschaftliche Aktivitäten im Verein.
+            </p>
+        </a>
+    </div>
+</section>
+</main>
+
+
+     <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-column footer-brand">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="footer-logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </div>
+                <p data-i18n="home.subtitle">
+                    Bildung, Kultur und Gemeinschaft unter einem Dach.
+                    Entdecken Sie unsere vielfältigen Kurse und Angebote für Kinder und Erwachsene.
+                </p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="footer.links">Links</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18n="nav.home">Startseite</a></li>
+                    <li><a href="angebote.html" data-i18n="nav.angebote">Angebote</a></li>
+                    <li><a href="verein.html" data-i18n="nav.verein">Verein</a></li>
+                    <li><a href="stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="nav.kontakt">Kontakt</h3>
+                <ul class="footer-contact">
+                    <li data-i18n="footer.address">📍 adresse</li>
+                    <li data-i18n="footer.phone">📞 +49 (0) 123 456789</li>
+                    <li data-i18n="footer.email">✉ info@kaleidoskop-ev.de</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Kaleidoskop e.V. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+                <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

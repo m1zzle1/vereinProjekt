@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verein - Kaleidoskop e.V.</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/verein.css">
+</head>
+<body>
+     <header class="site-header">
+        <nav class="navbar">
+            <div class="logo" >
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="verein.html" data-i18n="nav.verein">Verein</a></li>
+                <li><a href="angebote.html" data-i18n="nav.angebote">Vereinsangebote</a></li>
+                <li><a href="stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                <li><a href="kontakt.html" data-i18n="nav.kontakt">Kontakt</a></li>
+                <li><a class="button-spenden" href="spenden.html" data-i18n="nav.spenden">Spenden</a></li>
+                <li class="lang-switcher">
+                    <button type="button" onclick="setLang('de')">DE</button>
+                    <button type="button" onclick="setLang('ru')">RU</button>
+                    <button type="button" onclick="setLang('en')">EN</button>
+                    <button type="button" onclick="setLang('ua')">UA</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="verein-history">
+        <h1 data-i18n="verein.history.title">Geschichte des Vereins</h1>
+        <p data-i18n="verein.history.text1">
+            Kaleidoskop e.V. wurde gegründet, um Menschen durch Bildung, Kultur und gemeinsame Projekte zusammenzubringen.
+            Seit der Gründung engagiert sich der Verein für Kinder, Jugendliche und Erwachsene und schafft einen Ort für Begegnung,
+            Unterstützung und persönliche Entwicklung.
+        </p>
+        <p data-i18n="verein.history.text2">
+            Im Laufe der Zeit hat der Verein sein Angebot erweitert und organisiert heute verschiedene Kurse, Veranstaltungen
+            und soziale Initiativen für die Gemeinschaft.
+        </p>
+    </section>
+        <div class="vorstand-members">
+            <div class="member">
+                <img src="../images/placeholder.jpg" alt="Vorstand 1">
+                <h3 data-i18n="verein.board.member1.name">Name 1</h3>
+                <p data-i18n="verein.board.member1.position">Position: [Position]</p>
+                <p data-i18n="verein.board.member1.bio">Bio: [Kurze Biografie]</p>
+            </div>
+            <div class="member">
+                <img src="../images/placeholder.jpg" alt="Vorstand 2">
+                <h3 data-i18n="verein.board.member2.name">Name 2</h3>
+                <p data-i18n="verein.board.member2.position">Position: [Position]</p>
+                <p data-i18n="verein.board.member2.bio">Bio: [Kurze Biografie]</p>
+            </div>
+            <div class="member">
+                <img src="../images/placeholder.jpg" alt="Vorstand 3">
+                <h3 data-i18n="verein.board.member3.name">Name 3</h3>
+                <p data-i18n="verein.board.member3.position">Position: [Position]</p>
+                <p data-i18n="verein.board.member3.bio">Bio: [Kurze Biografie]</p>
+            </div>
+            <div class="member">
+                <img src="../images/placeholder.jpg" alt="Vorstand 4">
+                <h3 data-i18n="verein.board.member4.name">Name 4</h3>
+                <p data-i18n="verein.board.member4.position">Position: [Position]</p>
+                <p data-i18n="verein.board.member4.bio">Bio: [Kurze Biografie]</p>
+            </div>
+            <div class="member">
+                <img src="../images/placeholder.jpg" alt="Vorstand 5">
+                <h3 data-i18n="verein.board.member5.name">Name 5</h3>
+                <p data-i18n="verein.board.member5.position">Position: [Position]</p>
+                <p data-i18n="verein.board.member5.bio">Bio: [Kurze Biografie]</p>
+            </div>
+            
+        </div>
+
+
+        <h1 data-i18n="page.satzung.title">Satzung</h1>
+        <p><a class="main-btn" href="../documents/satzung.pdf" target="_blank" data-i18n="page.satzung.download">Satzung als PDF herunterladen</a></p>
+    </main>
+
+
+   <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-column footer-brand">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="footer-logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </div>
+                <p data-i18n="home.subtitle">
+                    Bildung, Kultur und Gemeinschaft unter einem Dach.
+                    Entdecken Sie unsere vielfältigen Kurse und Angebote für Kinder und Erwachsene.
+                </p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="footer.links">Links</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18n="nav.home">Startseite</a></li>
+                    <li><a href="angebote.html" data-i18n="nav.angebote">Angebote</a></li>
+                    <li><a href="verein.html" data-i18n="nav.verein">Verein</a></li>
+                    <li><a href="stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="nav.kontakt">Kontakt</h3>
+                <ul class="footer-contact">
+                    <li data-i18n="footer.address">📍 adresse</li>
+                    <li data-i18n="footer.phone">📞 +49 (0) 123 456789</li>
+                    <li data-i18n="footer.email">✉ info@kaleidoskop-ev.de</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Kaleidoskop e.V. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+                <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

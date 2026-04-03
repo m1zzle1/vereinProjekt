@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz - Kaleidoskop e.V.</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/legal.css">
+</head>
+<body>
+   <header class="site-header">
+        <nav class="navbar">
+            <div class="logo" >
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="verein.html" data-i18n="nav.verein">Verein</a></li>
+                <li><a href="angebote.html" data-i18n="nav.angebote">Vereinsangebote</a></li>
+                <li><a href="stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                <li><a href="kontakt.html" data-i18n="nav.kontakt">Kontakt</a></li>
+                <li><a class="button-spenden" href="spenden.html" data-i18n="nav.spenden">Spenden</a></li>
+                <li class="lang-switcher">
+                    <button type="button" onclick="setLang('de')">DE</button>
+                    <button type="button" onclick="setLang('ru')">RU</button>
+                    <button type="button" onclick="setLang('en')">EN</button>
+                    <button type="button" onclick="setLang('ua')">UA</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="datenschutz-page">
+    <section class="datenschutz-hero">
+        <h1 data-i18n="page.datenschutz.title">Datenschutzerklärung</h1>
+        <p data-i18n="page.datenschutz.subtitle">
+            Informationen zur Verarbeitung personenbezogener Daten auf der Website von Kaleidoskop e.V.
+        </p>
+    </section>
+
+
+    <section class="datenschutz-card">
+        <div class="datenschutz-section">
+            <h2 data-i18n="page.datenschutz.controller.title">1. Verantwortlicher</h2>
+            <p data-i18n="page.datenschutz.controller.text1">
+                Verantwortlich für die Datenverarbeitung auf dieser Website ist:
+            </p>
+            <p data-i18n-html="page.datenschutz.controller.text2">
+                Kaleidoskop e.V.<br>
+                Musterstraße 123<br>
+                12345 Musterstadt<br>
+                Deutschland
+            </p>
+            <p data-i18n-html="page.datenschutz.controller.text3">
+                Telefon: +49 (0) 123 456789<br>
+                E-Mail: <a href="mailto:info@kaleidoskop-ev.de">info@kaleidoskop-ev.de</a>
+            </p>
+        </div>
+
+
+        <div class="datenschutz-section">
+            <h2 data-i18n="page.datenschutz.general.title">2. Allgemeine Hinweise</h2>
+            <p data-i18n="page.datenschutz.general.text">
+                Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Wir verarbeiten personenbezogene Daten
+                nur im Rahmen der gesetzlichen Vorschriften, insbesondere der Datenschutz-Grundverordnung (DSGVO).
+            </p>
+        </div>
+
+
+        <div class="datenschutz-section">
+            <h2 data-i18n="page.datenschutz.hosting.title">3. Hosting und Server-Logfiles</h2>
+            <p data-i18n="page.datenschutz.hosting.text1">
+                Beim Aufruf dieser Website werden durch den Hosting-Anbieter automatisch Informationen
+                in sogenannten Server-Logfiles gespeichert. Dazu können insbesondere gehören:
+                IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, Browsertyp,
+                Betriebssystem und Referrer-URL.
+            </p>
+            <p data-i18n="page.datenschutz.hosting.text2">
+                Diese Verarbeitung erfolgt zur technischen Bereitstellung, Stabilität und Sicherheit der Website.
+            </p>
+        </div>
+
+
+        <div class="datenschutz-section">
+            <h2 data-i18n="page.datenschutz.contact.title">4. Kontaktaufnahme</h2>
+            <p data-i18n="page.datenschutz.contact.text1">
+                Wenn Sie uns per E-Mail oder Telefon kontaktieren, werden die von Ihnen übermittelten Daten
+                zur Bearbeitung Ihrer Anfrage verarbeitet.
+            </p>
+            <p data-i18n="page.datenschutz.contact.text2">
+                Diese Daten werden nicht ohne Ihre Einwilligung weitergegeben, sofern keine gesetzliche Verpflichtung besteht.
+            </p>
+        </div>
+
+
+        <div class="datenschutz-section">
+            <h2 data-i18n="page.datenschutz.links.title">5. Externe Links</h2>
+            <p data-i18n="page.datenschutz.links.text1">
+                Unsere Website enthält Links zu externen Websites und externen Formularen.
+                Wenn Sie auf einen solchen Link klicken, verlassen Sie unsere Website.
+            </p>
+            <p data-i18n="page.datenschutz.links.text2">
+                Für die Inhalte und die Datenverarbeitung auf externen Websites sind ausschließlich deren Betreiber verantwortlich.
+            </p>
+        </div>
+
+
+        <div class="datenschutz-section">
+            <h2 data-i18n="page.datenschutz.pdf.title">6. PDF-Dateien</h2>
+            <p data-i18n="page.datenschutz.pdf.text1">
+                Auf unserer Website stellen wir Dokumente, zum Beispiel die Satzung des Vereins, als PDF-Dateien
+                zum Download oder zur Ansicht bereit.
+            </p>
+            <p data-i18n="page.datenschutz.pdf.text2">
+                Beim Abruf dieser Dateien können technisch notwendige Zugriffsdaten durch den Hosting-Anbieter verarbeitet werden.
+            </p>
+        </div>
+
+
+        <div class="datenschutz-section">
+            <h2 data-i18n="page.datenschutz.cookies.title">7. Cookies</h2>
+            <p data-i18n="page.datenschutz.cookies.text1">
+                Unsere Website verwendet derzeit keine Analyse-, Tracking- oder Marketing-Cookies.
+            </p>
+            <p data-i18n="page.datenschutz.cookies.text2">
+                Sofern technisch notwendige Speichermechanismen oder Cookies verwendet werden,
+                dienen diese ausschließlich der sicheren und funktionalen Bereitstellung der Website.
+            </p>
+        </div>
+
+
+        <div class="datenschutz-section">
+            <h2 data-i18n="page.datenschutz.rights.title">8. Ihre Rechte</h2>
+            <p data-i18n="page.datenschutz.rights.text1">
+                Sie haben im Rahmen der gesetzlichen Vorschriften das Recht auf Auskunft über die zu Ihrer Person
+                gespeicherten Daten, auf Berichtigung, Löschung, Einschränkung der Verarbeitung sowie auf Datenübertragbarkeit.
+            </p>
+            <p data-i18n="page.datenschutz.rights.text2">
+                Außerdem haben Sie das Recht, sich bei einer zuständigen Datenschutz-Aufsichtsbehörde zu beschweren.
+            </p>
+        </div>
+
+
+        <div class="datenschutz-section">
+            <h2 data-i18n="page.datenschutz.status.title">9. Stand</h2>
+            <p data-i18n="page.datenschutz.status.text">
+                Diese Datenschutzerklärung hat den Stand: März 2026.
+            </p>
+        </div>
+    </section>
+</main>
+
+
+
+     <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-column footer-brand">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="footer-logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </div>
+                <p data-i18n="home.subtitle">
+                    Bildung, Kultur und Gemeinschaft unter einem Dach.
+                    Entdecken Sie unsere vielfältigen Kurse und Angebote für Kinder und Erwachsene.
+                </p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="footer.links">Links</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18n="nav.home">Startseite</a></li>
+                    <li><a href="angebote.html" data-i18n="nav.angebote">Angebote</a></li>
+                    <li><a href="verein.html" data-i18n="nav.verein">Verein</a></li>
+                    <li><a href="stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="nav.kontakt">Kontakt</h3>
+                <ul class="footer-contact">
+                    <li data-i18n="footer.address">📍 adresse</li>
+                    <li data-i18n="footer.phone">📞 +49 (0) 123 456789</li>
+                    <li data-i18n="footer.email">✉ info@kaleidoskop-ev.de</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Kaleidoskop e.V. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+                <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

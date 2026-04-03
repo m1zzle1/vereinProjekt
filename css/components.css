@@ -1,0 +1,148 @@
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0 4rem;
+}
+
+.button-group a {
+    text-decoration: none;
+}
+
+.button-group button,
+.angebote-hero button,
+.stelle-link,
+.kontakt-link,
+main > p a[href$=".pdf"] {
+    border: none;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.button-group button,
+.angebote-hero button {
+    padding: 1rem 2rem;
+}
+
+/* Основные кнопки */
+#angebote-button,
+.stelle-link,
+.kontakt-link,
+main > p a[href$=".pdf"] {
+    display: inline-block;
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 0.85rem 1.2rem;
+    background-color: #b8d9d4;
+    color: #000000;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 10px 24px #98cedb;
+    text-decoration: none;
+}
+
+#angebote-button:hover,
+.stelle-link:hover,
+.kontakt-link:hover,
+main > p a[href$=".pdf"]:hover {
+    background-color: #98cedb;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px #98cedb;
+}
+
+/* Главная CTA-кнопка */
+#cta-button {
+    background-color: #eec7dfad;
+    color: var(--color-text-main);
+    box-shadow: 0 10px 24px #eec7dfad;
+}
+
+#cta-button:hover {
+    background-color: #efc9c9;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px #efc9c9;
+}
+
+
+/* Cookie banner */
+.cookie-banner {
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    width: calc(100% - 2rem);
+    max-width: 920px;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 1rem 1.25rem;
+    z-index: 9999;
+    text-align: center;
+    display: none;
+    border: 1px solid rgba(45, 27, 105, 0.1);
+    border-radius: 18px;
+    color: var(--color-text-main);
+    box-shadow: 0 16px 40px rgba(45, 27, 105, 0.12);
+    backdrop-filter: blur(10px);
+}
+
+.cookie-banner.active {
+    display: block !important;
+}
+
+.cookie-banner.hidden {
+    display: none;
+}
+
+.cookie-banner p {
+    margin: 0;
+    color: var(--color-text-main);
+}
+
+.cookie-banner button {
+    margin-top: 0.75rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.cookie-banner button:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .button-group {
+        margin: 2rem 0 3rem;
+    }
+
+    .button-group button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .button-group button,
+    .angebote-hero button {
+        padding: 0.95rem 1.25rem;
+    }
+
+    .cookie-banner {
+        width: calc(100% - 1rem);
+        bottom: 0.5rem;
+        padding: 1rem;
+        border-radius: 16px;
+    }
+
+    .cookie-banner button {
+        width: 100%;
+        margin-top: 0.9rem;
+    }
+}

@@ -1,0 +1,209 @@
+.stellen-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+}
+
+.stellen-hero {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    border-radius: 30px;
+    border: 1px solid rgba(45, 27, 105, 0.08);
+    box-shadow: 0 18px 40px rgba(45, 27, 105, 0.10);
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.28)),
+        radial-gradient(circle at 16% 20%, rgba(255, 145, 40, 0.18) 0 11%, transparent 12%),
+        radial-gradient(circle at 82% 20%, rgba(255, 107, 157, 0.18) 0 11%, transparent 12%),
+        radial-gradient(circle at 26% 78%, rgba(255, 196, 90, 0.14) 0 12%, transparent 13%),
+        radial-gradient(circle at 84% 76%, rgba(255, 120, 170, 0.14) 0 12%, transparent 13%),
+        conic-gradient(
+            from 215deg at 50% 50%,
+            rgba(235, 112, 6, 0.12),
+            rgba(255, 180, 0, 0.10),
+            rgba(255, 107, 157, 0.12),
+            rgba(255, 160, 90, 0.10),
+            rgba(235, 112, 6, 0.12)
+        ),
+        linear-gradient(135deg, #fffaf6, #fff8fc);
+    isolation: isolate;
+}
+
+.stellen-hero::before,
+.stellen-hero::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.72;
+}
+
+.stellen-hero::before {
+    width: 280px;
+    height: 280px;
+    top: -85px;
+    left: -70px;
+    background:
+        conic-gradient(
+            from 40deg,
+            rgba(255, 135, 20, 0.20),
+            rgba(255, 185, 60, 0.16),
+            rgba(255, 220, 120, 0.14),
+            rgba(255, 130, 170, 0.14),
+            rgba(255, 95, 140, 0.16),
+            rgba(255, 135, 20, 0.20)
+        );
+    clip-path: polygon(50% 0%, 72% 14%, 96% 18%, 84% 42%, 100% 62%, 74% 72%, 84% 96%, 56% 86%, 50% 100%, 30% 84%, 4% 92%, 16% 64%, 0% 44%, 18% 18%);
+    transform: rotate(-16deg);
+    filter: blur(1px);
+}
+
+.stellen-hero::after {
+    width: 320px;
+    height: 320px;
+    right: -90px;
+    bottom: -110px;
+    background:
+        conic-gradient(
+            from 130deg,
+            rgba(255, 107, 157, 0.18),
+            rgba(255, 120, 170, 0.14),
+            rgba(255, 170, 80, 0.16),
+            rgba(255, 210, 120, 0.14),
+            rgba(235, 112, 6, 0.16),
+            rgba(255, 107, 157, 0.18)
+        );
+    clip-path: polygon(50% 0%, 64% 12%, 88% 8%, 80% 34%, 100% 50%, 80% 68%, 90% 94%, 62% 84%, 50% 100%, 34% 86%, 8% 92%, 18% 66%, 0 50%, 18% 28%, 10% 8%, 38% 14%);
+    transform: rotate(18deg);
+    filter: blur(1px);
+}
+
+.stellen-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.stellen-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.stellen-hero h1,
+.stellen-hero p {
+    position: relative;
+    z-index: 1;
+}
+
+.stellen-hero h1 {
+    margin: 0 0 1rem;
+    font-size: 2.6rem;
+    color: var(--color-text-main);
+}
+
+.stellen-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+}
+
+.stellen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.stellen-grid a {
+    background-color: #eababeb8;
+}
+
+.stellen-grid a:hover {
+    background-color: #e6abb090;
+}
+
+
+.stelle-card {
+    background: var(--color-white);
+    border-radius: 22px;
+    padding: 2rem;
+    border: 1px solid rgba(45, 27, 105, 0.08);
+    box-shadow: 0 12px 28px rgba(45, 27, 105, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.stelle-card:nth-child(1) {
+    border-top: 6px solid #d07272ad;}
+
+.stelle-card:nth-child(2) {
+    border-top: 6px solid #dd9cd0;
+}
+
+.stelle-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(45, 27, 105, 0.12);
+}
+
+.stelle-card h2,
+.stelle-card h3 {
+    margin: 0 0 0.9rem;
+    color: var(--color-text-main);
+    font-size: 1.3rem;
+}
+
+.stelle-card p {
+    margin: 0 0 1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .stellen-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .stellen-hero {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .stellen-page {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .stellen-hero {
+        padding: 2rem 1rem;
+        border-radius: 22px;
+        margin-bottom: 2rem;
+    }
+
+    .stellen-hero h1 {
+        font-size: 2rem;
+    }
+
+    .stellen-hero p {
+        font-size: 1rem;
+    }
+
+    .stellen-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stelle-card {
+        padding: 1.5rem;
+        border-radius: 18px;
+    }
+}

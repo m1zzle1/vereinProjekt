@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Kaleidoskop e.V.</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/legal.css">
+</head>
+<body>
+     <header class="site-header">
+        <nav class="navbar">
+            <div class="logo" >
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="verein.html" data-i18n="nav.verein">Verein</a></li>
+                <li><a href="angebote.html" data-i18n="nav.angebote">Vereinsangebote</a></li>
+                <li><a href="stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                <li><a href="kontakt.html" data-i18n="nav.kontakt">Kontakt</a></li>
+                <li><a class="button-spenden" href="spenden.html" data-i18n="nav.spenden">Spenden</a></li>
+                <li class="lang-switcher">
+                    <button type="button" onclick="setLang('de')">DE</button>
+                    <button type="button" onclick="setLang('ru')">RU</button>
+                    <button type="button" onclick="setLang('en')">EN</button>
+                    <button type="button" onclick="setLang('ua')">UA</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="impressum-page">
+    <section class="impressum-hero">
+        <h1 data-i18n="page.impressum.title">Impressum</h1>
+        <p data-i18n="page.impressum.subtitle">
+            Angaben gemäß § 5 DDG sowie weitere rechtliche Informationen zu Kaleidoskop e.V.
+        </p>
+    </section>
+
+
+    <section class="impressum-card">
+        <div class="impressum-section">
+            <h2 data-i18n="page.impressum.ddg.title">Angaben gemäß § 5 DDG</h2>
+            <p data-i18n-html="page.impressum.ddg.text">
+                Kaleidoskop e.V.<br>
+                Musterstraße 123<br>
+                12345 Musterstadt<br>
+                Deutschland
+            </p>
+        </div>
+
+
+        <div class="impressum-section">
+            <h2 data-i18n="page.impressum.represented.title">Vertreten durch</h2>
+            <p data-i18n="page.impressum.represented.text">
+                Vorstand: Max Mustermann, Erika Musterfrau
+            </p>
+        </div>
+
+
+        <div class="impressum-section">
+            <h2 data-i18n="page.impressum.contact.title">Kontakt</h2>
+            <p data-i18n-html="page.impressum.contact.text">
+                Telefon: +49 (0) 123 456789<br>
+                E-Mail:
+                <a href="mailto:info@kaleidoskop-ev.de">info@kaleidoskop-ev.de</a>
+            </p>
+        </div>
+
+
+        <div class="impressum-section">
+            <h2 data-i18n="page.impressum.register.title">Registereintrag</h2>
+            <p data-i18n-html="page.impressum.register.text">
+                Vereinsregister: VR 12345<br>
+                Registergericht: Amtsgericht Musterstadt
+            </p>
+        </div>
+
+
+        <div class="impressum-section">
+            <h2 data-i18n="page.impressum.content.title">Verantwortlich für den Inhalt</h2>
+            <p data-i18n-html="page.impressum.content.text">
+                Max Mustermann<br>
+                Musterstraße 123<br>
+                12345 Musterstadt
+            </p>
+        </div>
+    </section>
+</main>
+
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-column footer-brand">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="footer-logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </div>
+                <p data-i18n="home.subtitle">
+                    Bildung, Kultur und Gemeinschaft unter einem Dach.
+                    Entdecken Sie unsere vielfältigen Kurse und Angebote für Kinder und Erwachsene.
+                </p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="footer.links">Links</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18n="nav.home">Startseite</a></li>
+                    <li><a href="angebote.html" data-i18n="nav.angebote">Angebote</a></li>
+                    <li><a href="verein.html" data-i18n="nav.verein">Verein</a></li>
+                    <li><a href="stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="nav.kontakt">Kontakt</h3>
+                <ul class="footer-contact">
+                    <li data-i18n="footer.address">📍 adresse</li>
+                    <li data-i18n="footer.phone">📞 +49 (0) 123 456789</li>
+                    <li data-i18n="footer.email">✉ info@kaleidoskop-ev.de</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Kaleidoskop e.V. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+                <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+.angebote-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+}
+
+.angebote-hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 3.2rem 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: 30px;
+    border: 1px solid rgba(45, 27, 105, 0.08);
+    box-shadow: 0 18px 40px rgba(45, 27, 105, 0.10);
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.16)),
+        radial-gradient(circle at 14% 20%, rgba(255, 99, 132, 0.28) 0 11%, transparent 12%),
+        radial-gradient(circle at 85% 18%, rgba(255, 206, 86, 0.24) 0 10%, transparent 11%),
+        radial-gradient(circle at 26% 78%, rgba(54, 162, 235, 0.24) 0 12%, transparent 13%),
+        radial-gradient(circle at 82% 76%, rgba(75, 192, 192, 0.24) 0 13%, transparent 14%),
+        conic-gradient(
+            from 210deg at 50% 50%,
+            rgba(255, 107, 157, 0.18),
+            rgba(255, 196, 0, 0.18),
+            rgba(113, 93, 255, 0.18),
+            rgba(78, 205, 196, 0.18),
+            rgba(255, 107, 157, 0.18)
+        ),
+        linear-gradient(135deg, #fff8fc, #f5ffff);
+    isolation: isolate;
+}
+
+.angebote-hero::before,
+.angebote-hero::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.96;
+}
+
+.angebote-hero::before {
+    width: 300px;
+    height: 300px;
+    top: -90px;
+    left: -70px;
+    background:
+        conic-gradient(
+            from 45deg,
+            rgba(255, 0, 128, 0.28),
+            rgba(255, 150, 0, 0.24),
+            rgba(255, 230, 0, 0.22),
+            rgba(0, 210, 255, 0.22),
+            rgba(130, 95, 255, 0.26),
+            rgba(255, 0, 128, 0.28)
+        );
+    clip-path: polygon(50% 0%, 72% 14%, 96% 18%, 84% 40%, 100% 62%, 74% 70%, 84% 96%, 56% 86%, 50% 100%, 30% 84%, 4% 92%, 16% 64%, 0% 44%, 18% 18%);
+    transform: rotate(-18deg);
+    filter: blur(0.5px);
+}
+
+.angebote-hero::after {
+    width: 340px;
+    height: 340px;
+    right: -90px;
+    bottom: -110px;
+    background:
+        conic-gradient(
+            from 120deg,
+            rgba(0, 255, 213, 0.24),
+            rgba(0, 153, 255, 0.22),
+            rgba(162, 89, 255, 0.26),
+            rgba(255, 99, 132, 0.24),
+            rgba(255, 205, 86, 0.22),
+            rgba(0, 255, 213, 0.24)
+        );
+    clip-path: polygon(50% 0%, 64% 12%, 88% 8%, 80% 34%, 100% 50%, 80% 68%, 90% 94%, 62% 84%, 50% 100%, 34% 86%, 8% 92%, 18% 66%, 0 50%, 18% 28%, 10% 8%, 38% 14%);
+    transform: rotate(20deg);
+    filter: blur(0.5px);
+}
+
+.angebote-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.angebote-hero h1,
+.angebote-hero p,
+.angebote-hero button,
+.angebote-hero a {
+    position: relative;
+    z-index: 1;
+}
+
+.angebote-hero button {
+    margin-top: 2rem;
+}
+
+.angebote-hero h1 {
+    margin: 0 0 1rem;
+    font-size: 2.7rem;
+    color: var(--color-text-main);
+}
+
+.angebote-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+}
+
+.angebote-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.angebot-card {
+    background: var(--color-white);
+    border-radius: 22px;
+    padding: 2rem;
+    border: 1px solid rgba(45, 27, 105, 0.08);
+    box-shadow: 0 12px 28px rgba(45, 27, 105, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Разные цвета карточек */
+.angebot-card:nth-child(1) {
+    border-top: 6px solid #cba6dfbf;
+}
+
+.angebot-card:nth-child(2) {
+    border-top: 6px solid #dd9cd0;
+}
+
+.angebot-card:nth-child(3) {
+    border-top: 6px solid #dd9cd0;
+}
+
+.angebot-card:nth-child(4) {
+    border-top: 6px solid #dd9cd0;
+}
+
+.angebot-card:nth-child(5) {
+    border-top: 6px solid #8bacc4;
+}
+
+.angebot-card:nth-child(6) {
+   border-top: 6px solid #8bacc4;
+}
+
+.angebot-card:nth-child(7) {
+    border-top: 6px solid #d07272ad;}
+
+.angebot-card:nth-child(8) {
+    border-top: 6px solid #d07272ad;}
+
+.angebot-card:nth-child(9) {
+    border-top: 6px solid #a0d2d2;
+}
+
+.angebot-card:nth-child(10) {
+    border-top: 6px solid #b9d7b8;
+}
+
+.angebot-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(45, 27, 105, 0.12);
+}
+
+.angebot-card h3 {
+    margin: 0 0 0.9rem;
+    color: var(--color-text-main);
+    font-size: 1.2rem;
+}
+
+.angebot-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .angebote-page {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .angebote-hero {
+        padding: 2.2rem 1rem;
+        border-radius: 22px;
+        margin-bottom: 2rem;
+    }
+
+    .angebote-hero h1 {
+        font-size: 2rem;
+    }
+
+    .angebote-hero p {
+        font-size: 1rem;
+    }
+
+    .angebote-grid {
+        gap: 1rem;
+    }
+
+    .angebot-card {
+        padding: 1.5rem;
+        border-radius: 18px;
+    }
+}

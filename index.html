@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleidoskop e.V. - Home</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="site-header">
+        <nav class="navbar">
+            <div class="logo" >
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Kaleidoskop e.V. Logo" class="logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="pages/verein.html" data-i18n="nav.verein">Verein</a></li>
+                <li><a href="pages/angebote.html" data-i18n="nav.angebote">Vereinsangebote</a></li>
+                <li><a href="pages/stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                <li><a href="pages/kontakt.html" data-i18n="nav.kontakt">Kontakt</a></li>
+                <li><a class="button-spenden" href="pages/spenden.html" data-i18n="nav.spenden">Spenden</a></li>
+                <li class="lang-switcher">
+                    <button type="button" onclick="setLang('de')">DE</button>
+                    <button type="button" onclick="setLang('ru')">RU</button>
+                    <button type="button" onclick="setLang('en')">EN</button>
+                    <button type="button" onclick="setLang('ua')">UA</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="content">
+        <section id="mission">
+            <h1 data-i18n="home.title">Willkommen bei Kaleidoskop e.V.</h1>
+            <p data-i18n="home.subtitle">Bildung, Kultur und Gemeinschaft unter einem Dach. Entdecken Sie unsere vielfältigen Kurse und Angebote für Kinder und Erwachsene.</p>
+        </section>
+
+
+        <div class="button-group">
+            <a href="https://formular.vereinsplaner.com/49f5fe4a-afce-4922-868e-2ddfa0040e0f" target="_blank" rel="noopener">
+                <button id="cta-button" data-i18n="home.cta">Mitglied werden</button>
+            </a>
+            <a href="pages/angebote.html">
+                <button id="angebote-button" data-i18n="nav.angebote">Vereinsangebote</button>
+            </a>
+        </div>
+
+
+        <section class="offers">
+            <h2 data-i18n="offers.title">Was wir anbieten</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <h3 data-i18n="offers.bildung.title">Bildung</h3>
+                    <p data-i18n="offers.bildung.text">Hochwertige Kurse in Mathematik und Sprachen für alle Altersgruppen.</p>
+                </div>
+                <div class="offer-card">
+                    <h3 data-i18n="offers.kultur.title">Kultur</h3>
+                    <p data-i18n="offers.kultur.text">Kreative Entfaltung durch Kunstkurse und kulturellen Austausch.</p>
+                </div>
+                <div class="offer-card">
+                    <h3 data-i18n="offers.gemeinschaft.title">Gemeinschaft</h3>
+                    <p data-i18n="offers.gemeinschaft.text">Ein starkes Netzwerk für ehrenamtliches Engagement und Zusammenhalt.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-column footer-brand">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Kaleidoskop e.V. Logo" class="footer-logo-img">
+                    <span data-i18n="site.title">Kaleidoskop e.V.</span>
+                </div>
+                <p data-i18n="home.subtitle">
+                    Bildung, Kultur und Gemeinschaft unter einem Dach.
+                    Entdecken Sie unsere vielfältigen Kurse und Angebote für Kinder und Erwachsene.
+                </p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="footer.links">Links</h3>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Startseite</a></li>
+                    <li><a href="pages/angebote.html" data-i18n="nav.angebote">Angebote</a></li>
+                    <li><a href="pages/verein.html" data-i18n="nav.verein">Verein</a></li>
+                    <li><a href="pages/stellen.html" data-i18n="nav.stellen">Stellenangebote</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3 data-i18n="nav.kontakt">Kontakt</h3>
+                <ul class="footer-contact">
+                    <li data-i18n="footer.address">📍 adresse</li>
+                    <li data-i18n="footer.phone">📞 +49 (0) 123 456789</li>
+                    <li data-i18n="footer.email">✉ info@kaleidoskop-ev.de</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Kaleidoskop e.V. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="pages/datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+                <a href="pages/impressum.html" data-i18n="footer.impressum">Impressum</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p data-i18n="cookie.text">Diese Website verwendet Cookies. Durch die Nutzung dieser Website stimmen Sie der Verwendung von Cookies zu.</p>
+        <button id="accept-cookies" data-i18n="cookie.accept">Akzeptieren alle Cookies</button>
+        <button id="decline-cookies" data-i18n="cookie.necessary">Akzeptieren nur notwendige Cookies</button>
+        <button id="close-cookie-banner" data-i18n="cookie.decline">Ablehnen</button>
+    </div>
+
+
+        <script src="js/script.js"></script>
+    </div>
+</body>
+</html>
